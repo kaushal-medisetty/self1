@@ -97,6 +97,7 @@ section {
 .home-content p {
     margin-top: 1rem;
     font-size: 1.6rem;
+    letter-spacing: .07rem;
 }
 
 .social-media a {
@@ -213,7 +214,8 @@ section {
 .about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
-    line-height: 130%
+    line-height: 130%;
+    letter-spacing: .07rem;
 }
 
 .education {
@@ -261,6 +263,8 @@ border-left: .2rem solid var(--main-color);
     border: .2rem solid var(--main-color);
     border-radius: .6rem;
     margin-bottom: 2rem;
+    font-size: 1.3rem;
+    letter-spacing: .10rem;
 }
 
 .education-content .content::before {
