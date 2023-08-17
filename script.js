@@ -1,28 +1,22 @@
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('.nav-link');
+const openmenuicon = document.querySelector(".open-menu");
+const closemenuicon = document.querySelector(".close-menu")
+const navMenu = document.querySelector(".nav-menu");
 
+openmenuicon.addEventListener("click", mobileMenu);
+closemenuicon.addEventListener("click", mobileMenu);
 
-window.onscroll = () =>{
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop-150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
+function mobileMenu() {
+    openmenuicon.classList.toggle("active");
+    closemenuicon.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
 
-        console.log(top)
-        console.log(height)
+const navLinks = document.querySelectorAll(".nav-link");
 
-        if(top >= offset && top < offset + height ) {
-            const targetId = '#' + sec.getAttribute('id');
-            const activeNavLink = document.querySelector(`a[href="${targetId}"]`);
-      
-            // Remove active class from all navigation links
-            document.querySelectorAll('.nav-link').forEach(link => {
-              link.classList.remove('active');
-            });
-      
-            // Add active class to the corresponding navigation link
-            activeNavLink.classList.add('active');
-        }
-    })
+navLinks.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    openmenuicon.classList.remove("active");
+    closemenuicon.classList.remove("active")
+    navMenu.classList.remove("active");
 }

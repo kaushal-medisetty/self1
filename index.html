@@ -4,21 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
     <header class="header">
         <a href="#" class="logo">SUJITH</a>
-        <div class="bx bx-menu" id="menu-icon"></div>
-        <nav class="navbar">
-            <a href="#home" class="active nav-link">Home</a>
+        <nav class="nav-menu">
+            <a href="#home" class="nav-link">Home</a>
             <a href="#about" class="nav-link">About</a>
             <a href="#profile" class="nav-link">Profile</a>
             <a href="#projects" class="nav-link">Projects</a>
             <a href="#contact" class="nav-link">Contact</a>
         </nav>
+        <div class="open-menu"><i class='bx bx-menu'></i></div>
+        <div class="close-menu"><i class='bx bx-x'></i></div>
     </header>
 
     <!-- home section design -->
@@ -35,14 +36,13 @@
                 frontend and backend technologies. I am a highly motivated and self-directed individual. I am also a
                 team player and I am able to work effectively with others to
                 achieve common goals.</p>
-            <div class="social-media">
-                <a href=""><i class='bx bxl-facebook'></i></a>
-                <a href=""><i class='bx bxl-twitter'></i></a>
-                <a href=""><i class='bx bxl-instagram-alt'></i></a>
-                <a href=""><i class='bx bxl-linkedin'></i></i></a>
-            </div>
-            <div class="btn-box">
-                <a href="" class="bt">Download CV</a>
+            <div class="Professional-details">
+                <div class="btn-box">
+                    <a href="" class="bt"> Linked-In </a>
+                </div>
+                <div class="btn-box">
+                    <a href="" class="bt">Download CV</a>
+                </div>
             </div>
         </div>
         <div class="home-img">
@@ -51,12 +51,8 @@
     </section>
 
     <section class="about" id="about">
-        <div class="about-img">
-            <img src="about-me-photo.jpg" alt="">
-            <span class="circle-spin"></span>
-        </div>
         <div class="about-content">
-            <h2 class="heading">About Me</h2>
+            <h2 class="heading"><img src="about-me-photo.jpg" alt="">About Me</h2>
             <h3>Full-Stack Developer</h3>
             <p>Worked as a SDE At Amadeus Software Labs, I worked in the Airlines Checking In department, specifically
                 in
@@ -76,6 +72,14 @@
                 <h3 class="title">Education</h3>
 
                 <div class="education-box">
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calendar"></i>2023 - Currently pursuing masters</div>
+                            <h3>Graduation - University Of Memphis</h3>
+                            <p>Currently pursuing my master's at University Of Memephis, Memphis, TN 38152</p>
+                        </div>
+                    </div>
 
                     <div class="education-content">
                         <div class="content">
@@ -139,7 +143,11 @@
                             </div>
                             <h4>Frameworks and Libraries : </h4>
                             <div class="skills">
-                                <span>Angular, SpringBoot and Spring Security</span>
+                                <span>Angular, SpringBoot, Spring Security, Spring JPA, Hibernate</span>
+                            </div>
+                            <h4>Cloud Technologies & other : </h4>
+                            <div class="skills">
+                                <span>AWS, MySQL, ML (Published a Research Paper)</span>
                             </div>
                             <devops>" A bit Familiar with DevOps and Deployment like Docker (creating and managing
                                 Docker containers to ensure efficient application deployment and scalability) and
@@ -155,74 +163,83 @@
     </section>
 
 
-    <section class="services" id="projects">
+    <section class="projects" id="projects">
         <h2 class="heading">My Projects</h2>
 
-        <div class="services-container">
-            <div class="services-box">
+        <div class="projects-container">
+
+            <div class="projects-box">
+                <i class="bx bx-code-alt"></i>
+                <h3>COVID Tracker</h3>
+                <p>Designed a web application for tracking world wide COVID-cases. This Tracking app helps us to know
+                    confirmed cases, recovery and
+                    deaths with pictorial representation.(Hybrid App i.e. works on both
+                    Android and ios</p>
+                <div class="btn-box"> <a href="" class="bt">ReadMore</a></div>
+            </div>
+
+            <div class="projects-box">
+                <i class="bx bx-code-alt"></i>
+                <h3>Retail Management System</h3>
+                <p>This application maintains the statistics of Teller and helps
+                    supervisors to monitor their performance. Designed this web application using Spring Boot as the
+                    backend
+                    framework, MY SQL database, Bootstrap & JS for front-end
+                    development</p>
+                <div class="btn-box"> <a href="" class="bt">ReadMore</a></div>
+            </div>
+
+            <div class="projects-box overflow">
+                <i class="bx bx-code-alt"></i>
+                <h3>Restaurent Management System</h3>
+                <p>Restaurant management system have four modules namely
+                    Customer, Admin, Kitchen Master, Supervisor. Customer can login and
+                    add items to cart, customize the items added to cart, choose a payment mode, place the order. Admin
+                    can login to his account, can
+                    (Add, Edit, Delete) Items, Chefs, Supervisors. Chef can login to his account, Serve the orders
+                    placed. Supervisor resolves the customer quaries. Designed this web application using Angular10,
+                    Spring boot, Hibernate 5.3, Log4J</p>
+                <div class="btn-box"> <a href="" class="bt">ReadMore</a></div>
+            </div>
+
+            <div class="projects-box">
                 <i class="bx bx-code-alt"></i>
                 <h3>Information-Security-Management-System</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia odio exercitationem enim! Ullam
-                    explicabo odio corporis nesciunt. Iusto officiis id neque distinctio cumque consequatur cum.
-                    Provident maiores non distinctio eius!</p>
+                <p>It is a generic web application(basic) developed to avoid security breaches. some of the Security
+                    features: storing
+                    the resource in a secured fashion encrypted via AES algo.. and password, secret keys were encoded
+                    and stored in database, Only authorised individuals can login to their respective portals, captcha
+                    to avoid DOS attacks, used parameterised quries and JPA this helps to avoid
+                    SQL injections. Can send the notifications and alerts to the desired people this feature
+                    ensures the privacy in communication. website is
+                    running with https protocol as i self signed the certificate and trusted the certificate.</p>
                 <div class="btn-box"><a href="" class="bt">ReadMore</a></div>
             </div>
 
-            <div class="services-box">
-                <i class="bx bx-code-alt"></i>
-                <h3>Retail Management System</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia odio exercitationem enim! Ullam
-                    explicabo odio corporis nesciunt. Iusto officiis id neque distinctio cumque consequatur cum.
-                    Provident maiores non distinctio eius!</p>
-                <div class="btn-box"> <a href="" class="bt">ReadMore</a></div>
-            </div>
 
-            <div class="services-box">
+            <div class="projects-box">
                 <i class="bx bx-code-alt"></i>
-                <h3>Restaurent Management System</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia odio exercitationem enim! Ullam
-                    explicabo odio corporis nesciunt. Iusto officiis id neque distinctio cumque consequatur cum.
-                    Provident maiores non distinctio eius!</p>
-                <div class="btn-box"> <a href="" class="bt">ReadMore</a></div>
-            </div>
-
-            <div class="services-box">
-                <i class="bx bx-code-alt"></i>
-                <h3>COVID Tracker</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia odio exercitationem enim! Ullam
-                    explicabo odio corporis nesciunt. Iusto officiis id neque distinctio cumque consequatur cum.
-                    Provident maiores non distinctio eius!</p>
-                <div class="btn-box"> <a href="" class="bt">ReadMore</a></div>
-            </div>
-
-            <div class="services-box">
-                <i class="bx bx-code-alt"></i>
-                <h3>Visit My Git Repo For more Projects..!</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia odio exercitationem enim! Ullam
-                    explicabo odio corporis nesciunt. Iusto officiis id neque distinctio cumque consequatur cum.
-                    Provident maiores non distinctio eius!</p>
+                <h3>Visit My Git Repo For more Info..!</h3>
+                <p></p>
                 <div class="btn-box"> <a href="" class="bt">ReadMore</a></div>
             </div>
 
         </div>
     </section>
-
     <footer class="contact" id="contact">
         <div class="contact-container">
-            <div class="contact-box social-media">
-                <a href=""><i class='bx bxl-facebook'></i></a>
-                <a href=""><i class='bx bxl-twitter'></i></a>
-                <a href=""><i class='bx bxl-instagram-alt'></i></a>
-                <a href=""><i class='bx bxl-linkedin'></i></i></a>
+            <div class="contact-box Professional-details">
+                <div class="btn-box">
+                    <a href="" class="bt"> Linked-In </a>
+                </div>
             </div>
-            <div class="contact-box">
-                <div class="contact-details"><i class="bx bxl-gmail"></i><span>medisujith@gmail.com</span></div>
+            <div class="contact-box details">
+                <div class="contact-details"><i class="bx bxl-gmail"></i><span>sujithmedisetty012@gmail.com</span></div>
                 <div class="contact-details"><i class="bx bx-phone"></i><span>(901) 264-7157</span></div>
             </div>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
+<script src="Script.js"></script>
 
 </html>
