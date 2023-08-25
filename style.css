@@ -78,10 +78,12 @@ section {
         flex-direction: column;
         background-color: var(--second-bg-color);
         width: 100%;
-        border-radius: 10px;
-        text-align: center;
+        /* border-radius: 10px; */
+        /* text-align: center; */
+        justify-content: center;
+        align-items: center;
         transition: 0.3s;
-        box-shadow: 10 10px 27px var(--bg-color);
+        /* box-shadow: 10 10px 27px var(--bg-color); */
     }
 
     .nav-menu.active {
@@ -107,7 +109,9 @@ section {
     }
 
     .nav-link {
-        margin: 2.5rem 0;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+        margin-right: 2rem;
     }
 }
 
